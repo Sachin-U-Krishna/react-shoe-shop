@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+body{
+    background-color: black;
+    color: white;
+    font-size: 18px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.featured{
+    width: 100%;
+    height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#create {
+    background-color: rgba(155, 155, 155, 0.155);
+    border-radius: 50px;
+    padding-top: 75px;
+    position: relative;
+    height: 70vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#create a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 70px;
+    padding-left: 9vw;
 }
-
-.App-link {
-  color: #61dafb;
+#create .input{
+    text-align: center;
+    border-color: black;
+    width: 250px
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#create #submit {
+    width: 100px;
+    height: 40px
+}
+#create #submit:hover, #create #submit:active{
+    background-color: crimson;
+}
+#create input{
+    border-radius: 15px;
+    height: 50px;
+    background-color: #67676792;
+    border: 0;
+    color: white;
+}
+#create input::placeholder{
+    color: #d2d2d2;
+}
+#create #submit::placeholder{
+    color: white;
+}
+.graphics{
+    position: absolute;
+    bottom: -196px;
+    right: 0;
+    z-index: -1;
+    height: 50vh;
+}
+.graphics-b{
+    position: absolute;
+    bottom: -240px;
+    right: 0;
+    z-index: -1;
+    height: 50vh;
+}
+.graphics-l{
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    z-index: -1;
+    height: 50vh;
+}
+.f-brand{
+    font-weight: 700;
+    font-size: 40px;
+}
+.f-amt{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0.6;
+}
+nav{
+    font-size: 15px;
+}
+.logos{
+    height: 300px;
+    width: 100%;
+}
+@media(min-width: 768px){
+    #view img{
+        width: 100%
+    }
+}
+.navbar li a:focus, .navbar li a:active, .navbar li a:focus-visible{
+    color: white !important;
+    border: 1px solid white;
+}
+#view button {
+    background-color: #ff5c00;
+    color: white;
+    border-radius: 15px;
+    width: 13vw;
+    font-size: 36px;
+}
+#view-c1{
+    border-radius: 55px;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+#view-c1 h1{
+    font-style: italic;
+    font-size: 4.5rem;
+}
+#view-c1 h2{
+    font-style: italic;
+    font-size: 3.5rem;
+}
+#view-c1 h4{
+    font-style: italic;
+    font-size: 2.5rem;
+}
+.fst-italic .color{
+    margin-right: 15px;
+    font-size: 28px;
+}
+.fst-italic .gray{
+color: gray;
+background-color: gray;
+}
+.fst-italic .red{
+    color: red;
+    background-color: red;
+}
+.fst-italic .yellow{
+    color: yellow;
+    background-color: yellow;
+}
+.fst-italic .blue{
+    color: blue;
+    background-color: blue;
+}
+.fst-italic .size{
+    margin-right: 15px;
+    border: 1px solid white;
+}
+#view button:hover{
+    background-color: crimson;
+}
+#filter{
+    position: relative ;
+    
+}
+#filter .line{
+    position: absolute ;
+    right: 0;
+    color: white;
+    height: 100%;
+    display: block;
+    outline:1px solid white
+}
+#list h3{
+    text-decoration: underline;
+}
+#item a{
+    text-decoration: none;
+    color: white;
+}
+#item img{
+    width: 100%
+}
+.navbar button{
+    border-radius: 0 15px 15px 0;
+    width: 65px
+}
+.navbar #search{
+    border-radius: 15px 0 0 15px;
+    border: 0;
+}
+hr{
+    border-color: white !important  ;
+    height: 3px !important
+}
+#filter ul{
+    list-style-type: none;
+}
+#filter .blue{
+    color: blue;
+}
+#filter .green{
+    color: green;
+}
+#filter .orange{
+    color: orange;
+}
+#filter .yellow{
+    color: yellow;
+}
+#filter .pink{
+    color: pink;
+}
+#filter input::placeholder{
+    color: white;
+    font-size: 18px;
+    /* background-color: white; */
+}
+#filter input{
+    width: 45px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+#filter input::-webkit-outer-spin-button,
+#filter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#error{
+    width: 100%;
+    height: 90vh;
 }
